@@ -1,0 +1,15 @@
+.company-description {
+    width: 1000px;
+}
+
+.verified {
+    width: 100px;
+    height: 100px;
+}
+
+.license {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+}
+
