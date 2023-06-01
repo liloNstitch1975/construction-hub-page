@@ -14,3 +14,49 @@
     width: 50px;
     height: 50px;
   }
+
+  #map { height: 180px; }
+
+.bar li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 450;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-image: url();
+    background-size: cover;
+    background-color: rgb(128, 120, 120);
+}
+
+.main-header h1 {
+    color: rgb(16, 196, 241);
+    font-size: 35px;
+}
+
+.bar ul{
+    list-style: none;
+}
+
+.bar li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.bar li a:hover{
+    color: rgb(0, 255, 255);
+}
+
+.Search-Bar {
+   width: 450px;
+   height:50px;
+   font-size: 25px;
+}
