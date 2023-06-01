@@ -1,2 +1,16 @@
-#map { height: 180px; }
-
+.container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .forecast-card {
+    border: 20px solid #038af8;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-icon {
+    width: 50px;
+    height: 50px;
+  }
