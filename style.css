@@ -1,5 +1,6 @@
 body {
     height: 150vh;
+    background-color: red;
 }
 .container {
     display: flex;
@@ -78,7 +79,8 @@ body {
 }
 
 .cardImage {
-    padding-left: 50px;
+    padding-left: 25px;
+    padding-top: 10px;
     max-width: 150px;
     max-height: 150px; 
 }
@@ -94,6 +96,31 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    
 }
 
+.company-description { 
+    width: 500px; 
+    background-color: rgb(223, 61, 61); 
+}
+
+.verified {
+    height: 20px;
+    width: 20px;
+}
+
+.license {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+}
+
+.html-link-card-h1 {
+    height: 50px;
+
+}
+ 
+#cj {
+    height: 75px;
+    width: auto;
+
+}
