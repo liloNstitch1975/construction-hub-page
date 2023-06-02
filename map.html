@@ -3,9 +3,12 @@
     <head>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
         <style>
+            
             #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0};
         </style>
+        
     </head>
     <body>
         <div id = "map"></div>
@@ -14,6 +17,71 @@
             L.tileLayer('https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=xVi58PRopLxFqgLdOfgh', {
                 attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
             }).addTo(map);
+
+            var marker1 = L.marker([39.571, -111.928]).addTo(map);
+            var circle1 = L.circle([39.571, -111.928], 
+            {color:'red',
+            fillColor:'#f03',
+            fillOpacity: 0.5,
+            radius: 125000
+        }).addTo(map);
+        
+        marker1.bindPopup("<b> Hey There! </b><br> I am a marker1.").openPopup();
+       
+        var marker2 = L.marker([38.251, -85.756]).addTo(map);
+        var circle2 = L.circle([38.251, -85.756], {color:'red',
+            fillColor:'#f03',
+            fillOpacity: 0.5,
+            radius: 125000
+        }).addTo(map);
+
+        marker2.bindPopup("<b> Hey There! </b><br> I am a marker2.").openPopup();
+
+        var marker3 = L.marker([43.133, -84.726]).addTo(map);
+        var circle3 = L.circle([43.133, -84.726], {color:'red',
+            fillColor:'#f03',
+            fillOpacity: 0.5,
+            radius: 125000
+        }).addTo(map);
+
+        marker3.bindPopup("<b> Hey There! </b><br> I am a marker3.").openPopup();
+
+        var marker4 = L.marker([38.993, -94.614]).addTo(map);
+        var circle4 = L.circle([38.993, -94.614], {color:'red',
+            fillColor:'#f03',
+            fillOpacity: 0.5,
+            radius: 125000
+        }).addTo(map);
+
+        marker4.bindPopup("<b> Hey There! </b><br> I am a marker4.").openPopup();
+        
+        
+
+        L.control.scale({
+            metric: true,
+            imperial: false,
+            position: 'topright'
+        }).addTo(map);
+
+        L.Control.Watermark=L.Control.extend({
+            onAdd:function(map){
+                var img = L.DomUtil.create('img');
+                img.src = 'logo.png';
+                img.style.width = '200px';
+                return img;
+            },
+            onRemove:function(map){},
+        });
+
+        L.control.watermark = function(opts){
+            return new L.Control.Watermark(opts);
+        }
+
+        L.control.watermark({position:'bottomleft'}).addTo(map);
+           
+        
+
         </script>
     </body>
 </html>
+

@@ -1,6 +1,6 @@
 body {
     height: 150vh;
-    background-color: red;
+    
 }
 .container {
     display: flex;
@@ -65,62 +65,6 @@ body {
    font-size: 25px;
 }
 
-.card {
-    width: 400px;
-    height: 350px;
-    justify-items: center; 
-    margin: 20px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out
-}
-
-.card:hover {
-    transform: scale(0.9);
-}
-
-.cardImage {
-    padding-left: 25px;
-    padding-top: 10px;
-    max-width: 150px;
-    max-height: 150px; 
-}
-
-#renni {
-    width: 150px;
-    height: 150px;
-}
-
-.grid-2-columns {
-    width: 1000px; background-color:rgb(255, 247, 247);
-    position: absolute; left: 500px; top: 500px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-}
-
-.company-description { 
-    width: 500px; 
-    background-color: rgb(223, 61, 61); 
-}
-
-.verified {
-    height: 20px;
-    width: 20px;
-}
-
-.license {
-    position: absolute;
-    top: 200px;
-    right: 300px;
-}
-
-.html-link-card-h1 {
-    height: 50px;
-
-}
- 
-#cj {
-    height: 75px;
-    width: auto;
-
-}
+.company-description {
+    background-color: rgb(224, 97, 97);
+} 
