@@ -18,16 +18,44 @@
                 attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
             }).addTo(map);
 
-            var marker = L.marker([41.223, -111.972]).addTo(map);
-
-            var circle = L.circle([41.223, -111.972], 
+            var marker1 = L.marker([39.571, -111.928]).addTo(map);
+            var circle1 = L.circle([39.571, -111.928], 
             {color:'red',
             fillColor:'#f03',
             fillOpacity: 0.5,
-            radius: 50000
+            radius: 125000
         }).addTo(map);
         
-        marker.bindPopup("<b> Hey There! </b><br> I am a marker.").openPopup();
+        marker1.bindPopup("<b> Hey There! </b><br> I am a marker1.").openPopup();
+       
+        var marker2 = L.marker([38.251, -85.756]).addTo(map);
+        var circle2 = L.circle([38.251, -85.756], {color:'red',
+            fillColor:'#f03',
+            fillOpacity: 0.5,
+            radius: 125000
+        }).addTo(map);
+
+        marker2.bindPopup("<b> Hey There! </b><br> I am a marker2.").openPopup();
+
+        var marker3 = L.marker([43.133, -84.726]).addTo(map);
+        var circle3 = L.circle([43.133, -84.726], {color:'red',
+            fillColor:'#f03',
+            fillOpacity: 0.5,
+            radius: 125000
+        }).addTo(map);
+
+        marker3.bindPopup("<b> Hey There! </b><br> I am a marker3.").openPopup();
+
+        var marker4 = L.marker([38.993, -94.614]).addTo(map);
+        var circle4 = L.circle([38.993, -94.614], {color:'red',
+            fillColor:'#f03',
+            fillOpacity: 0.5,
+            radius: 125000
+        }).addTo(map);
+
+        marker4.bindPopup("<b> Hey There! </b><br> I am a marker4.").openPopup();
+        
+        
 
         L.control.scale({
             metric: true,
@@ -56,3 +84,4 @@
         </script>
     </body>
 </html>
+
