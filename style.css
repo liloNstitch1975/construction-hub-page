@@ -1,7 +1,7 @@
 body {
     height: 150vh;
-    
 }
+
 .container {
     display: flex;
     justify-content: flex-end;
@@ -66,5 +66,100 @@ body {
 }
 
 .company-description {
-    background-color: rgb(224, 97, 97);
+    background-color: rgb(240, 239, 239);
+    width: 1300px;
+    padding: 20px 30px 20px 30px;
+    margin-left: 100px;
+    position: absolute;
+    top: 300px;;
 } 
+
+.h1-card {
+    font-weight: 700;
+    font-size: 50px;
+    position: absolute;
+    top: 50px;
+    margin-left: 100px;
+}
+
+.logo {
+    position: absolute;
+    right: 600px;
+}
+
+.license {
+    position: absolute;
+    bottom: 500px;
+    right: 300px;
+}
+
+.verified {
+    height: 50px;
+}
+
+.logo-cj {
+    position: absolute;
+    top: 50px;
+    right: 600px;
+}
+
+.adPhoto {
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 500px;
+}
+
+.adPhoto-2 {
+    height: 300px;
+    position: absolute;
+    bottom: 50px;
+    left: 500px;
+}
+
+.grid-2-columns {
+    background-color: rgb(240, 239, 239);
+    width: 735px;
+    height: 770px;
+    position: absolute;
+    bottom: -400px; left: 550px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 400px ;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.card {
+    
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardImage {
+    padding: 10px 0 0 20px;
+}
+
+#cj {
+    padding-right: 15px;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.cardLink {
+    border: transparent;
+}
+
+.SandS {
+    margin-left: 15px;
+    height: 370px;
+    width: 350px;
+}
+
+.classic {
+    margin-left: 15px;
+    height: 328px;
+    width: 350px;
+}
