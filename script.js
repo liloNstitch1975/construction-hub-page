@@ -44,3 +44,21 @@ fetch(`http://api.weatherapi.com/v1/forecast.json?key=26f25b18c1804a2bbbc1182423
     // Handle any errors
     console.log('Error fetching forecast data:', error);
   });
+
+
+  var cardButton = getElementById(cardButton)
+
+ function buttonLink() {
+    cardButton.onclick(window.open(C:\Users\Mateo\coding\construction-hub-page\cardHTMLs\classicjack.html));
+    console.log("this is the link")
+ }
+
+ //http://127.0.0.1:5500/cardHTMLs/classicjack.html
+
+ //http://127.0.0.1:5500/cardHTMLs/graniteConstruction.html
+
+ //http://127.0.0.1:5500/cardHTMLs/rennison.html
+
+ //http://127.0.0.1:5500/cardHTMLs/rennison.html
+
+ 
