@@ -13,7 +13,7 @@
 <body>
     <nav class="bar">
         <ul>
-            <li><a href="main.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
     <h1 class="h1-card">Classic Jack Construction</h1>
@@ -45,7 +45,42 @@
     
     <img src="https://fitsmallbusiness.com/wp-content/uploads/2019/09/FeatureImage_how-to-buy-an-apartment-complex.jpg" alt="apt complex" class="adPhoto-2">
     
-    
+    <form id="emailForm">
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required>
+        <button type="submit">Save Email</button>
+    </form>
+    <ul id="emailList"></ul>
+    <script>
+        // Retrieve saved emails from Local Storage and display them on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            var emailList = JSON.parse(localStorage.getItem('emails')) || [];
+            displayEmails(emailList);
+        });
+        // Save email to Local Storage on form submission
+        document.getElementById('emailForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var emailInput = document.getElementById('emailInput');
+            var email = emailInput.value;
+            if (email) {
+                var emailList = JSON.parse(localStorage.getItem('emails')) || [];
+                emailList.push(email);
+                localStorage.setItem('emails', JSON.stringify(emailList));
+                emailInput.value = '';
+                displayEmails(emailList);
+            }
+        });
+        // Display the list of emails on the page
+        function displayEmails(emailList) {
+            var emailListElement = document.getElementById('emailList');
+            emailListElement.innerHTML = '';
+            emailList.forEach(function (email) {
+                var listItem = document.createElement('li');
+                listItem.textContent = email;
+                emailListElement.appendChild(listItem);
+            });
+        }
+    </script>
 
 
 </body>

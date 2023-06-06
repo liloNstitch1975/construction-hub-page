@@ -1,165 +1,105 @@
-body {
-    height: 150vh;
+.container {
+  display: flex;
+  justify-content: flex-end;
+  
 }
 
-.container {
-    display: flex;
-    justify-content: flex-end;
-  }
+.forecast-card {
+  border: 20px solid #038af8;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  /* margin-left:  75%; */
   
-  .forecast-card {
-    border: 20px solid #038af8;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .forecast-icon {
-    width: 50px;
-    height: 50px;
-  }
+}
 
-  #map { height: 180px; }
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#map { height: 180px; }
 
 .bar li a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 450;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
 
 }
 
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-image: url();
-    background-size: cover;
-    background-color: rgb(128, 120, 120);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-image: url();
+  background-size: cover;
+  background-color: rgb(128, 120, 120);
 }
 
 .main-header h1 {
-    color: rgb(16, 196, 241);
-    font-size: 35px;
+  color: rgb(16, 196, 241);
+  font-size: 35px;
 }
 
 .bar ul{
-    list-style: none;
+  list-style: none;
 }
 
 .bar li{
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
 .bar li a:hover{
-    color: rgb(0, 255, 255);
+  color: rgb(0, 255, 255);
 }
 
 .Search-Bar {
-   width: 450px;
-   height:50px;
-   font-size: 25px;
+ width: 450px;
+ height:50px;
+ font-size: 25px;
 }
 
-.company-description {
-    background-color: rgb(240, 239, 239);
-    width: 1300px;
-    padding: 20px 30px 20px 30px;
-    margin-left: 100px;
-    position: absolute;
-    top: 300px;;
-} 
-
-.h1-card {
-    font-weight: 700;
-    font-size: 50px;
-    position: absolute;
-    top: 50px;
-    margin-left: 100px;
+footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
 }
 
-.logo {
-    position: absolute;
-    right: 600px;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.license {
-    position: absolute;
-    bottom: 500px;
-    right: 300px;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.verified {
-    height: 50px;
+.footer-column {
+  width: 33.33%;
+  margin-bottom: 20px;
+  color: #333;
+  justify-content: center;
 }
 
-.logo-cj {
-    position: absolute;
-    top: 50px;
-    right: 600px;
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.adPhoto {
-    height: 300px;
-    position: absolute;
-    bottom: 100px;
-    left: 500px;
+p {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
-.adPhoto-2 {
-    height: 300px;
-    position: absolute;
-    bottom: 50px;
-    left: 500px;
-}
-
-.grid-2-columns {
-    background-color: rgb(240, 239, 239);
-    width: 735px;
-    height: 770px;
-    position: absolute;
-    bottom: -400px; left: 550px;
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 400px ;
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
-.card {
-    
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.cardImage {
-    padding: 10px 0 0 20px;
-}
-
-#cj {
-    padding-right: 15px;
-}
-
-.card:hover {
-    transform: scale(0.9);
-}
-
-.cardLink {
-    border: transparent;
-}
-
-.SandS {
-    margin-left: 15px;
-    height: 370px;
-    width: 350px;
-}
-
-.classic {
-    margin-left: 15px;
-    height: 328px;
-    width: 350px;
+ul {
+  list-style: none;
+  margin-top: 1px;
+  margin-left: 1px;
 }
